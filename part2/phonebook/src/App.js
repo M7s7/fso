@@ -32,7 +32,7 @@ const App = () => {
         // Database service and Notifications
         personService.changeNumber(targetPerson.id, updatedPerson)
           .then(setMessage(`${newName}'s number has been changed`))
-          .catch(error => setMessage(`${newName}'s information has already been removed from server`))
+          .catch(error => setMessage(`${newName}'s information has already been deleted from server`))
 
         // State change
         const index = persons.indexOf(targetPerson)

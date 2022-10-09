@@ -4,18 +4,18 @@ const Notification = ({ errorMessage }) => {
   }
 
   const errorStyle = {
-    color: 'red',
-    fontSize: 50,
+    fontSize: 30,
+    borderRadius: '1px',
+    padding: '10px',
+    color: 'white',
     background: 'black',
-    borderRadius: '4px'
   }
-  
+
   return (
     <div style={errorStyle}>
       {errorMessage}
     </div>
   )
 }
-
 
 export default Notification
